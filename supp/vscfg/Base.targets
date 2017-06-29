@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ExDevVS2010>VS2010</ExDevVS2010>
+		<ExDevVS2012>VS2012</ExDevVS2012>
+		<ExDevVS2013>VS2013</ExDevVS2013>
+		<ExDevVS2015>VS2015</ExDevVS2015>
+		<ExDevVS2017>VS2017</ExDevVS2017>
+		
+		<ExLib>lib</ExLib>
+		<ExBin>bin</ExBin>
+		
+		<ExArchWin>win</ExArchWin>
+		
+		<ExPlatformX86>x86</ExPlatformX86>
+		<ExPlatformX64>x64</ExPlatformX64>
+		<ExPlatformArm>arm</ExPlatformArm>
+		
+		<ExWinPlatform>$(ExArchWin)-$(PlatformShortName)</ExWinPlatform>
+		<ExWin32>$(ExArchWin)-$(ExPlatformX86)</ExWin32>
+		<ExWin64>$(ExArchWin)-$(ExPlatformX64)</ExWin64>
+		<ExWinArm>$(ExArchWin)-$(ExPlatformArm)</ExWinArm>
+		
+		<ExSolutionDir>$(SolutionDir)..\</ExSolutionDir>
+		<ExBuildDir>$(ExSolutionDir)build\</ExBuildDir>
+		<ExOutDir>$(ExSolutionDir)out\</ExOutDir>
+		<ExSourceDir>$(ExSolutionDir)src\</ExSourceDir>
+		
+		<ExThisDev>$(ExDevVS2017)</ExThisDev>
+		<ExThisSourceDir>$(ExSourceDir)$(ProjectName)\</ExThisSourceDir>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ExThisArch>$(ExWin32)</ExThisArch>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<ExThisArch>$(ExWin64)</ExThisArch>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ExThisArch>$(ExWin32)</ExThisArch>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<ExThisArch>$(ExWin64)</ExThisArch>
+	</PropertyGroup>
+</Project>

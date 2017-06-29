@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="Cpp.targets" />
+	
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  
+	<PropertyGroup>
+		<ExCmdWrapDll>al.exe /link:"$(ExOutDir)$(ExWinPlatform)\$(ExBin)\$(Configuration)\$(TargetName)$(TargetExt)" /out:"$(ExOutDir)$(ExWinPlatform)\$(ExBin)\$(Configuration)\$(TargetName).wrp$(TargetExt)" /platform:$(PlatformTarget)</ExCmdWrapDll>
+	</PropertyGroup>
+	
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <ImportLibrary>$(ExOutDir)$(ExWin32)\$(ExLib)\$(ProjectName)d.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <ImportLibrary>$(ExOutDir)$(ExWin64)\$(ExLib)\$(ProjectName)d.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <ImportLibrary>$(ExOutDir)$(ExWin32)\$(ExLib)\$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <ImportLibrary>$(ExOutDir)$(ExWin64)\$(ExLib)\$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

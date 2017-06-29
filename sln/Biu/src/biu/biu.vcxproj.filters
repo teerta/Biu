@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{53896bec-816c-450e-a162-3e144684d3d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\inc">
+      <UniqueIdentifier>{acaae358-d5f4-42bc-aad0-91364224204d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\src">
+      <UniqueIdentifier>{83079c9c-05e7-42a6-a4b1-478dd9d26a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collection">
+      <UniqueIdentifier>{b1664819-0d04-4793-bdc2-4f82bd29a41b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collection\inc">
+      <UniqueIdentifier>{edc18aec-359d-4f7e-9994-39ed4e03232d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collection\src">
+      <UniqueIdentifier>{f39ad600-4dc2-4d61-b5e4-7b68302abf79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{06388298-46a8-4f78-ab07-f29e685b211f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File\inc">
+      <UniqueIdentifier>{8c913357-9f6f-41e9-8b4c-65d3c2fcb95f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File\src">
+      <UniqueIdentifier>{310a7aac-e720-4348-88cf-da791e542f63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String">
+      <UniqueIdentifier>{0d97920d-bd8e-4184-9d19-e457db261dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String\inc">
+      <UniqueIdentifier>{a1fd3c28-c68c-41cf-9311-f6399de9eba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String\src">
+      <UniqueIdentifier>{734ac9b2-2517-4b53-957a-5557de38e3f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{86ccf229-4d58-4a41-ae53-4bc8f0129c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread\inc">
+      <UniqueIdentifier>{79cee858-5728-4c78-bce1-214b12c7f9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread\src">
+      <UniqueIdentifier>{1c9ac26e-fc41-4a48-a8ec-b04f6a7192c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{6939390e-b977-4ca3-b1e3-b63abc287c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\inc">
+      <UniqueIdentifier>{a631d319-7348-4747-a416-570a930379f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\src">
+      <UniqueIdentifier>{8d98c91f-f6b1-433e-b40a-5b3c20381985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Marshal">
+      <UniqueIdentifier>{54fe6f8b-396d-4542-b439-478beeef0c8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Marshal\inc">
+      <UniqueIdentifier>{750ecf2b-1f3a-431e-9146-9e539475b18f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Marshal\src">
+      <UniqueIdentifier>{26a69c4f-47d4-4826-bf74-9d01fb2b69ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{2b059f67-63e7-4ca3-8c51-87d71c3a79ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory\inc">
+      <UniqueIdentifier>{f44ae5a1-f87a-4049-a059-e0f67af05bb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory\src">
+      <UniqueIdentifier>{d28e6d5d-61a5-4d90-bbb4-328517525514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security">
+      <UniqueIdentifier>{f4d89d87-42bb-4348-ae84-424034e7b44a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security\inc">
+      <UniqueIdentifier>{e0aeec70-9a00-49ef-8d7f-03e183ffc96e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security\src">
+      <UniqueIdentifier>{03bb28ea-6796-4fd2-8ed9-0e42822b7eda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{f1eb815f-2368-43d3-a34f-b308784b44d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\inc">
+      <UniqueIdentifier>{165de266-aa53-452c-b12e-0c6e362f0c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\src">
+      <UniqueIdentifier>{8e69f93c-c22a-49bb-831e-a5eaf4a36484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{02f0e012-7268-44a9-988b-4291dadc2b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net\inc">
+      <UniqueIdentifier>{554eaa6a-e72d-4ad2-9c11-0b5e0896c65f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net\src">
+      <UniqueIdentifier>{510f7a5a-e324-4648-9e19-cb1c8016a348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{bdfa1276-8806-4796-a167-d742960c8bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net-Priv">
+      <UniqueIdentifier>{66dbeeeb-9384-4b6d-87fb-0b33693faa64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net-Priv\inc">
+      <UniqueIdentifier>{0cf80b28-bcd9-4416-accd-8a4dd8a63768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net-Priv\src">
+      <UniqueIdentifier>{e22d9233-5f2a-47c5-8507-751881ba8622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO-Priv">
+      <UniqueIdentifier>{52db4779-5773-4d86-b391-0694758f3ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO\inc">
+      <UniqueIdentifier>{3cceafd9-2b0a-4fb8-b521-f8fc3f52bc5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO\src">
+      <UniqueIdentifier>{02716ec7-e18a-4358-aa73-ffff810a58ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO-Priv\inc">
+      <UniqueIdentifier>{6e3eeb87-90cd-43db-b6bf-e70d500c65f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO-Priv\src">
+      <UniqueIdentifier>{52e52095-6492-4874-b79a-9c0c024b8c7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net\src-context">
+      <UniqueIdentifier>{7978157f-717d-472e-a49f-ec8a92cd1f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arch">
+      <UniqueIdentifier>{4a54638f-0cfb-415a-ae3a-d4fc6f2a1c20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arch\inc">
+      <UniqueIdentifier>{0d6a248c-acc9-40a5-accc-7e33eefe1f89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arch\src">
+      <UniqueIdentifier>{f7a11c4a-129a-4812-9397-bf5375ef152a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime">
+      <UniqueIdentifier>{08a5dfca-c84c-4aab-8b40-2f67169d0304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\inc">
+      <UniqueIdentifier>{b04b8a82-e1be-4a00-9191-b4447f228b53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\src">
+      <UniqueIdentifier>{df6bbb41-f12a-4090-8267-f22eb90cafa2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bbase.h">
+      <Filter>Common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bbfunc.h">
+      <Filter>Common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bexception.h">
+      <Filter>Common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bfunc.h">
+      <Filter>Common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bmarco.h">
+      <Filter>Common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\btype.h">
+      <Filter>Common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bstrenc.h">
+      <Filter>Common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bcoll.h">
+      <Filter>Collection\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bfile.h">
+      <Filter>File\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bstring.h">
+      <Filter>String\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bdef.h">
+      <Filter>Common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bspfunc.h">
+      <Filter>Thread\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bsyncprim.h">
+      <Filter>Thread\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bstctl.h">
+      <Filter>Utility\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\butility.h">
+      <Filter>Utility\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bsfunc.h">
+      <Filter>Marshal\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bmalloc.h">
+      <Filter>Memory\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bmshack.h">
+      <Filter>Memory\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bstype.h">
+      <Filter>Marshal\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bs.h">
+      <Filter>Marshal\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\biu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bencoder.h">
+      <Filter>Security\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bashley.h">
+      <Filter>Protocol\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bptl.h">
+      <Filter>Protocol\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bsora.h">
+      <Filter>Protocol\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bndef.h">
+      <Filter>Net\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="priv\bioctxt.h">
+      <Filter>IO-Priv\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\biodef.h">
+      <Filter>IO\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\biodisp.h">
+      <Filter>IO\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\biohand.h">
+      <Filter>IO\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bnio.h">
+      <Filter>Net\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bpeer.h">
+      <Filter>Net\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="priv\bnex.h">
+      <Filter>Net-Priv\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bnctxt.h">
+      <Filter>Net\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bpeersvr.h">
+      <Filter>Net\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bpeerdata.h">
+      <Filter>Net\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bstdcollutil.h">
+      <Filter>Collection\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\basobj.h">
+      <Filter>Arch\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="priv\i_iodispab.h">
+      <Filter>IO-Priv\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="priv\i_iodispatcher.h">
+      <Filter>IO-Priv\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="priv\i_nio.h">
+      <Filter>Net-Priv\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="priv\i_peer.h">
+      <Filter>Net-Priv\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bpeerrepre.h">
+      <Filter>Net\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bsyncprimx.h">
+      <Filter>Thread\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bnfunc.h">
+      <Filter>Net\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\baq.h">
+      <Filter>Arch\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\baqdef.h">
+      <Filter>Arch\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bah.h">
+      <Filter>Arch\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bcp.h">
+      <Filter>Security\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bp4.h">
+      <Filter>Security\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\biosecc.h">
+      <Filter>IO\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bsec.h">
+      <Filter>Security\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bnpar.h">
+      <Filter>Net\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\blm.h">
+      <Filter>Runtime\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\brt.h">
+      <Filter>Runtime\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bscm.h">
+      <Filter>Runtime\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bwmi.h">
+      <Filter>Runtime\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bmc.h">
+      <Filter>Runtime\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bp4s.h">
+      <Filter>Security\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\berr.h">
+      <Filter>Common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\biorule.h">
+      <Filter>IO\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bstdx.h">
+      <Filter>Utility\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="biu\bcounter.h">
+      <Filter>Common\inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="biu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\base.cpp">
+      <Filter>Common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\funcmath.cpp">
+      <Filter>Common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\functime.cpp">
+      <Filter>Common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\strenc.cpp">
+      <Filter>Common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Collection\coll.cpp">
+      <Filter>Collection\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\File\file.cpp">
+      <Filter>File\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\String\strfunc.cpp">
+      <Filter>String\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thread\critsec.cpp">
+      <Filter>Thread\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thread\event.cpp">
+      <Filter>Thread\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thread\rwlock.cpp">
+      <Filter>Thread\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thread\scopelock.cpp">
+      <Filter>Thread\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thread\semaphore.cpp">
+      <Filter>Thread\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thread\sufficer.cpp">
+      <Filter>Thread\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thread\suppch.cpp">
+      <Filter>Thread\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Marshal\converter.cpp">
+      <Filter>Marshal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Memory\mbrick.cpp">
+      <Filter>Memory\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Marshal\serializer.cpp">
+      <Filter>Marshal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Security\encoderalpha.cpp">
+      <Filter>Security\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Protocol\ashley.cpp">
+      <Filter>Protocol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Protocol\ptl.cpp">
+      <Filter>Protocol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Protocol\sora.cpp">
+      <Filter>Protocol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src-priv\IO\iocontext.cpp">
+      <Filter>IO-Priv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\iodispab.cpp">
+      <Filter>IO\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\iohand.cpp">
+      <Filter>IO\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\ioexecunit.cpp">
+      <Filter>IO\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\iodispatcher.cpp">
+      <Filter>IO\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\nioexecunit.cpp">
+      <Filter>Net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\peerrepre.cpp">
+      <Filter>Net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\peerserver.cpp">
+      <Filter>Net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\peer.cpp">
+      <Filter>Net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src-priv\Net\nsex.cpp">
+      <Filter>Net-Priv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\nctxtfac.cpp">
+      <Filter>Net\src-context</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\nhostctxt.cpp">
+      <Filter>Net\src-context</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\npeerctxt.cpp">
+      <Filter>Net\src-context</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\nsvrctxt.cpp">
+      <Filter>Net\src-context</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\nusrctxt.cpp">
+      <Filter>Net\src-context</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\nusrinf.cpp">
+      <Filter>Net\src-context</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\nusrstat.cpp">
+      <Filter>Net\src-context</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\nclictxt.cpp">
+      <Filter>Net\src-context</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\datainfo.cpp">
+      <Filter>Net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\peerdata.cpp">
+      <Filter>Net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\datainfopeer.cpp">
+      <Filter>Net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\peerclidata.cpp">
+      <Filter>Net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\datainfowait.cpp">
+      <Filter>Net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Arch\asobj.cpp">
+      <Filter>Arch\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src-priv\IO\i_iodispab.cpp">
+      <Filter>IO-Priv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src-priv\IO\i_iodipatcher.cpp">
+      <Filter>IO-Priv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src-priv\IO\i_iodisio.cpp">
+      <Filter>IO-Priv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src-priv\IO\i_iodisworker.cpp">
+      <Filter>IO-Priv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src-priv\Net\i_peer.cpp">
+      <Filter>Net-Priv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src-priv\Net\i_nioexecunit.cpp">
+      <Filter>Net-Priv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src-priv\Net\i_nioexecunitio.cpp">
+      <Filter>Net-Priv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src-priv\Net\i_nioexecunitworker.cpp">
+      <Filter>Net-Priv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\nfunc.cpp">
+      <Filter>Net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Arch\aqobj.cpp">
+      <Filter>Arch\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Arch\ahash.cpp">
+      <Filter>Arch\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Security\cryptprov.cpp">
+      <Filter>Security\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Security\p4.cpp">
+      <Filter>Security\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\rawdata.cpp">
+      <Filter>Common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\cabutf8str.cpp">
+      <Filter>Common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Security\secprov.cpp">
+      <Filter>Security\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Security\secitem.cpp">
+      <Filter>Security\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\iosecc.cpp">
+      <Filter>IO\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\nconncrea.cpp">
+      <Filter>Net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Runtime\mlm.cpp">
+      <Filter>Runtime\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Runtime\rtproc.cpp">
+      <Filter>Runtime\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Runtime\scmm.cpp">
+      <Filter>Runtime\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Runtime\wmifunc.cpp">
+      <Filter>Runtime\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Runtime\marchinechar.cpp">
+      <Filter>Runtime\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Security\p4s.cpp">
+      <Filter>Security\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\singlecounter.cpp">
+      <Filter>Common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Common\multiplecounter.cpp">
+      <Filter>Common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\iobehaviorarb.cpp">
+      <Filter>IO\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\ioaddressmap.cpp">
+      <Filter>IO\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="biu.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

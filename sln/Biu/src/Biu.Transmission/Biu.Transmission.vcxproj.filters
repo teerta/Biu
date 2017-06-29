@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Native">
+      <UniqueIdentifier>{41811f6c-99ad-4960-b209-47c3900392c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Native\inc">
+      <UniqueIdentifier>{d75d1f63-7c64-44fb-9db7-830e0609bf29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Native\src">
+      <UniqueIdentifier>{28ff3a6c-320c-49a1-9c28-a4f22943b5fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR">
+      <UniqueIdentifier>{e5bf3802-85fb-4b55-923f-faa8d783205f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\inc">
+      <UniqueIdentifier>{62c56de2-9a6c-43c9-bf4e-9dc3e6efa896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLR\src">
+      <UniqueIdentifier>{e8f071a9-05b9-4bad-bb6f-85471154a9f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ArchObject.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Ashley.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="IODispatcher.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryBrick.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="NetIOExecutionUnit.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Peer.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PeerData.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickObject.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Serializer.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerPeer.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="TransmissionManager.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Delegate.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="IOHandler.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="NHandlerChannel.h">
+      <Filter>Native\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryShack.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SecurityProvider.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="IOSecurityContext.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializerDumper.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EventObject.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PeerStateKeeper.h">
+      <Filter>CLR\inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ArchObject.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Ashley.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="AshleyHeader.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="IODispatcher.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryBrick.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="NetIOExecutionUnit.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Peer.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PeerData.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Serializer.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickObject.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerPeer.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="TransmissionManager.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="IOHandler.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="NHandlerChannel.cpp">
+      <Filter>Native\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryShack.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SecurityProvider.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="IOSecurityContext.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SerializerDumper.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EventObject.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PeerStateKeeper.cpp">
+      <Filter>CLR\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07C57DD0-5712-41F6-A266-EC1BDEA35C1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Biu.WinForm</RootNamespace>
+    <AssemblyName>Biu.WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>1591</NoWarn>
+    <DocumentationFile>..\..\out\win-x64\bin\Release\Biu.WinForm.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>1591</NoWarn>
+    <DocumentationFile>..\..\out\win-x86\bin\Release\Biu.WinForm.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FunctionView\AppViewValuePair.cs" />
+    <Compile Include="FunctionView\IAppModuleFactory.cs" />
+    <Compile Include="FunctionView\IAppModuleManager.cs" />
+    <Compile Include="Drawing\DrawablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Drawing\DrawablePanel.Designer.cs">
+      <DependentUpon>DrawablePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtil.cs" />
+    <Compile Include="FunctionView\AppFunction.cs" />
+    <Compile Include="FunctionView\AppFunctionItem.cs" />
+    <Compile Include="FunctionView\AppFunctionSite.cs" />
+    <Compile Include="FunctionView\AppFunctionViewChange.cs" />
+    <Compile Include="FunctionView\AppFunctionViewSearchParameter.cs" />
+    <Compile Include="FunctionView\AppUserControlView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FunctionView\Enum.cs" />
+    <Compile Include="FunctionView\IAppFunctionView.cs" />
+    <Compile Include="FunctionView\SearchHistory.cs" />
+    <Compile Include="FunctionView\SearchHistoryItem.cs" />
+    <Compile Include="Input\ActionItem.cs" />
+    <Compile Include="Input\ActionSubTypeConverter.cs" />
+    <Compile Include="Input\ActionTypeConverter.cs" />
+    <Compile Include="Input\Enum.cs" />
+    <Compile Include="Input\InputConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biu.Infrastructure\Biu.Infrastructure.csproj">
+      <Project>{823aa5e9-302c-4447-92cb-70c7be9aa12e}</Project>
+      <Name>Biu.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Biu.Object.Notify\Biu.Object.Notify.csproj">
+      <Project>{dd7f9c68-1e3a-405b-9f49-0a85323432ce}</Project>
+      <Name>Biu.Object.Notify</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Biu.Serialization\Biu.Serialization.csproj">
+      <Project>{f4db93af-32c5-445e-82f2-f3d5650d90db}</Project>
+      <Name>Biu.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Biu.Transmission\Biu.Transmission.vcxproj">
+      <Project>{71aad510-ba1c-49ee-b941-5b95a4b06740}</Project>
+      <Name>Biu.Transmission</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(SolutionDir)..\..\..\supp\vscfg\Clr.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

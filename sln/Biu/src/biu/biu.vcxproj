@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CCEC6C70-6BBF-43A8-9805-8809FC9F6C9A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>biu</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(ProjectDir)biu\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(ProjectDir)biu\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(ProjectDir)biu\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(ProjectDir)biu\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;BIU_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>$(ExCmdWrapDll)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;BIU_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>al.exe /link:"$(TargetPath)" /out:"$(TargetDir)$(TargetName).wrp.dll" /platform:$(PlatformTarget)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BIU_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>al.exe /link:"$(TargetPath)" /out:"$(TargetDir)$(TargetName).wrp.dll" /platform:$(PlatformTarget)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BIU_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>al.exe /link:"$(TargetPath)" /out:"$(TargetDir)$(TargetName).wrp.dll" /platform:$(PlatformTarget)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="biu\bah.h" />
+    <ClInclude Include="biu\baq.h" />
+    <ClInclude Include="biu\baqdef.h" />
+    <ClInclude Include="biu\bashley.h" />
+    <ClInclude Include="biu\basobj.h" />
+    <ClInclude Include="biu\bbase.h" />
+    <ClInclude Include="biu\bbfunc.h" />
+    <ClInclude Include="biu\bcoll.h" />
+    <ClInclude Include="biu\bcounter.h" />
+    <ClInclude Include="biu\bcp.h" />
+    <ClInclude Include="biu\berr.h" />
+    <ClInclude Include="biu\biorule.h" />
+    <ClInclude Include="biu\biosecc.h" />
+    <ClInclude Include="biu\blm.h" />
+    <ClInclude Include="biu\bmc.h" />
+    <ClInclude Include="biu\bnfunc.h" />
+    <ClInclude Include="biu\bnpar.h" />
+    <ClInclude Include="biu\bp4.h" />
+    <ClInclude Include="biu\bp4s.h" />
+    <ClInclude Include="biu\bpeerrepre.h" />
+    <ClInclude Include="biu\brt.h" />
+    <ClInclude Include="biu\bscm.h" />
+    <ClInclude Include="biu\bsec.h" />
+    <ClInclude Include="biu\bstdcollutil.h" />
+    <ClInclude Include="biu\bdef.h" />
+    <ClInclude Include="biu\bencoder.h" />
+    <ClInclude Include="biu\bexception.h" />
+    <ClInclude Include="biu\bfile.h" />
+    <ClInclude Include="biu\bfunc.h" />
+    <ClInclude Include="biu\biodef.h" />
+    <ClInclude Include="biu\biodisp.h" />
+    <ClInclude Include="biu\biohand.h" />
+    <ClInclude Include="biu\biu.h" />
+    <ClInclude Include="biu\bmalloc.h" />
+    <ClInclude Include="biu\bmarco.h" />
+    <ClInclude Include="biu\bmshack.h" />
+    <ClInclude Include="biu\bnctxt.h" />
+    <ClInclude Include="biu\bndef.h" />
+    <ClInclude Include="biu\bnio.h" />
+    <ClInclude Include="biu\bpeer.h" />
+    <ClInclude Include="biu\bpeerdata.h" />
+    <ClInclude Include="biu\bpeersvr.h" />
+    <ClInclude Include="biu\bptl.h" />
+    <ClInclude Include="biu\bsfunc.h" />
+    <ClInclude Include="biu\bs.h" />
+    <ClInclude Include="biu\bsora.h" />
+    <ClInclude Include="biu\bspfunc.h" />
+    <ClInclude Include="biu\bstctl.h" />
+    <ClInclude Include="biu\bstdx.h" />
+    <ClInclude Include="biu\bstrenc.h" />
+    <ClInclude Include="biu\bstring.h" />
+    <ClInclude Include="biu\bstype.h" />
+    <ClInclude Include="biu\bsyncprim.h" />
+    <ClInclude Include="biu\bsyncprimx.h" />
+    <ClInclude Include="biu\btype.h" />
+    <ClInclude Include="biu\butility.h" />
+    <ClInclude Include="biu\bwmi.h" />
+    <ClInclude Include="priv\bioctxt.h" />
+    <ClInclude Include="priv\bnex.h" />
+    <ClInclude Include="priv\i_iodispab.h" />
+    <ClInclude Include="priv\i_iodispatcher.h" />
+    <ClInclude Include="priv\i_nio.h" />
+    <ClInclude Include="priv\i_peer.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="biu.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src-priv\IO\iocontext.cpp" />
+    <ClCompile Include="src-priv\IO\i_iodipatcher.cpp" />
+    <ClCompile Include="src-priv\IO\i_iodisio.cpp" />
+    <ClCompile Include="src-priv\IO\i_iodispab.cpp" />
+    <ClCompile Include="src-priv\IO\i_iodisworker.cpp" />
+    <ClCompile Include="src-priv\Net\i_nioexecunit.cpp" />
+    <ClCompile Include="src-priv\Net\i_nioexecunitio.cpp" />
+    <ClCompile Include="src-priv\Net\i_nioexecunitworker.cpp" />
+    <ClCompile Include="src-priv\Net\i_peer.cpp" />
+    <ClCompile Include="src-priv\Net\nsex.cpp" />
+    <ClCompile Include="src\Arch\ahash.cpp" />
+    <ClCompile Include="src\Arch\aqobj.cpp" />
+    <ClCompile Include="src\Arch\asobj.cpp" />
+    <ClCompile Include="src\Collection\coll.cpp" />
+    <ClCompile Include="src\Common\base.cpp" />
+    <ClCompile Include="src\Common\funcmath.cpp" />
+    <ClCompile Include="src\Common\functime.cpp" />
+    <ClCompile Include="src\Common\multiplecounter.cpp" />
+    <ClCompile Include="src\Common\rawdata.cpp" />
+    <ClCompile Include="src\Common\singlecounter.cpp" />
+    <ClCompile Include="src\Common\strenc.cpp" />
+    <ClCompile Include="src\Common\cabutf8str.cpp" />
+    <ClCompile Include="src\File\file.cpp" />
+    <ClCompile Include="src\IO\ioaddressmap.cpp" />
+    <ClCompile Include="src\IO\iobehaviorarb.cpp" />
+    <ClCompile Include="src\IO\iodispatcher.cpp" />
+    <ClCompile Include="src\IO\iodispab.cpp" />
+    <ClCompile Include="src\IO\ioexecunit.cpp" />
+    <ClCompile Include="src\IO\iohand.cpp" />
+    <ClCompile Include="src\IO\iosecc.cpp" />
+    <ClCompile Include="src\Marshal\converter.cpp" />
+    <ClCompile Include="src\Marshal\serializer.cpp" />
+    <ClCompile Include="src\Memory\mbrick.cpp" />
+    <ClCompile Include="src\Net\datainfo.cpp" />
+    <ClCompile Include="src\Net\datainfopeer.cpp" />
+    <ClCompile Include="src\Net\datainfowait.cpp" />
+    <ClCompile Include="src\Net\nclictxt.cpp" />
+    <ClCompile Include="src\Net\nconncrea.cpp" />
+    <ClCompile Include="src\Net\nctxtfac.cpp" />
+    <ClCompile Include="src\Net\nfunc.cpp" />
+    <ClCompile Include="src\Net\nhostctxt.cpp" />
+    <ClCompile Include="src\Net\nioexecunit.cpp" />
+    <ClCompile Include="src\Net\npeerctxt.cpp" />
+    <ClCompile Include="src\Net\nsvrctxt.cpp" />
+    <ClCompile Include="src\Net\nusrctxt.cpp" />
+    <ClCompile Include="src\Net\nusrinf.cpp" />
+    <ClCompile Include="src\Net\nusrstat.cpp" />
+    <ClCompile Include="src\Net\peer.cpp" />
+    <ClCompile Include="src\Net\peerclidata.cpp" />
+    <ClCompile Include="src\Net\peerdata.cpp" />
+    <ClCompile Include="src\Net\peerrepre.cpp" />
+    <ClCompile Include="src\Net\peerserver.cpp" />
+    <ClCompile Include="src\Protocol\ashley.cpp" />
+    <ClCompile Include="src\Protocol\ptl.cpp" />
+    <ClCompile Include="src\Protocol\sora.cpp" />
+    <ClCompile Include="src\Runtime\marchinechar.cpp" />
+    <ClCompile Include="src\Runtime\mlm.cpp" />
+    <ClCompile Include="src\Runtime\rtproc.cpp" />
+    <ClCompile Include="src\Runtime\scmm.cpp" />
+    <ClCompile Include="src\Runtime\wmifunc.cpp" />
+    <ClCompile Include="src\Security\cryptprov.cpp" />
+    <ClCompile Include="src\Security\encoderalpha.cpp" />
+    <ClCompile Include="src\Security\p4.cpp" />
+    <ClCompile Include="src\Security\p4s.cpp" />
+    <ClCompile Include="src\Security\secitem.cpp" />
+    <ClCompile Include="src\Security\secprov.cpp" />
+    <ClCompile Include="src\String\strfunc.cpp" />
+    <ClCompile Include="src\Thread\critsec.cpp" />
+    <ClCompile Include="src\Thread\event.cpp" />
+    <ClCompile Include="src\Thread\rwlock.cpp" />
+    <ClCompile Include="src\Thread\scopelock.cpp" />
+    <ClCompile Include="src\Thread\semaphore.cpp" />
+    <ClCompile Include="src\Thread\sufficer.cpp" />
+    <ClCompile Include="src\Thread\suppch.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="biu.rc" />
+  </ItemGroup>
+  <Import Project="$(SolutionDir)..\..\..\supp\vscfg\CppDll.targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
